@@ -1,0 +1,21 @@
+scalar Date
+
+type User {
+  _id: ID!
+  firstName: String!
+  lastName: String!
+  email: String!
+  age: String!
+  createdAt: Date
+  updatedAt: Date
+}
+
+type Mutation {
+  createUser(
+    firstName: String!
+    lastName: String!
+    age: Int!
+    email: String!
+    password: String!
+  ): User
+}

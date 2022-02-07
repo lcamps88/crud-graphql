@@ -1,0 +1,9 @@
+type Mutation {
+  updateUser(
+    email: String!
+    firstName: String
+    lastName: String
+    age: Int
+    password: String
+  ): User!
+}
